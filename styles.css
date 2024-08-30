@@ -1,0 +1,290 @@
+/* Global Styles */
+/* Initial state of the dropdown menu */
+/* Initial state of the dropdown menu */
+.dropdown-menu-animated {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+  
+  /* When the parent collapse is expanded */
+  .collapse.show .dropdown-menu-animated {
+    max-height: 500px; /* Adjust based on the content height */
+    opacity: 1;
+  }
+  
+  
+  .no-radius {
+    border-radius: 0;
+  }
+  
+  .underline {
+    width: 5%;
+    border-top: 6px solid #3874FF;
+    margin-bottom: 1.5rem;
+    border-radius: 50px;
+  }
+  .divider {
+    width: 20%;
+    height: 4px;
+    background-color: #3874FF;
+    margin: 0;
+    margin-bottom: 20px;
+    border-radius: 50px;
+  }
+  
+  hr{
+    opacity: 1;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .bg-light-green {
+    background-color: #9bd300;
+  }
+  
+  .bg-light-purple {
+    background-color: #7147c4;
+  }
+  
+  .bg-light-blue {
+    background-color: #1f88f1;
+  }
+  
+  .bg-light-pink {
+    background-color: #df09df;
+  }
+  
+  .option-icon {
+    font-size: 25px;
+  }
+  
+  .market-movers {
+    background-color: #16172F;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+  }
+  
+  .stock-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0E0F23;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  
+  .stock-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  
+  .stock-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .stock-name {
+    font-weight: bold;
+  }
+  
+  .stock-price {
+    text-align: right;
+  }
+  
+  .stock-change {
+    color: green;
+  }
+  
+  .trending-section {
+    padding: 20px;
+    margin-top:25%;
+  }
+  .market-card h5 {
+    font-size: 16px;
+    color: #5078ff;
+  }
+  
+  .market-card .price {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .market-card .change {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .market-card .percentage {
+    font-size: 14px;
+    color: #4caf50;
+  }
+  
+  body {
+    background-color: #0E0F23;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+  }
+  .navbar, .footer {
+    background-color: #141414;
+  }
+  .btn-custom {
+    background-color: #3874FF;
+    color: #fff;
+  }
+  .btn-custom:hover {
+    background-color: #2D5CCC;
+  }
+  
+  .navbar-brand {
+      font-size: 30px; /* Increase the font size of the logo */
+      font-weight: bold; /* Make the logo text bolder */
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 20px; /* Increase the font size of the navigation links */
+    }
+  
+  /* Hero Section */
+  .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px; /* Adjust the height of the wave */
+      margin-top: -1px; /* Adjust if needed to eliminate any gaps */
+  }
+  
+  .hero {
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #17181C;
+  }
+  .hero .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  .hero-content {
+    padding: 20px; /* Adds some padding for small screens */
+  }
+  .hero-content h1{
+      line-height: 0.7;
+      font-size: 2.5rem; /* Default font size for larger screens */
+      margin-bottom: 10px; /* Adds spacing between headings */
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem; /* Default font size for paragraph */
+    margin-bottom: 20px; /* Adds spacing below the paragraph */
+  }
+  
+  .hero img {
+    width: 100%; /* Ensures the image scales responsively */
+    height: auto;
+    max-width: 80%; /* Sets a max width to control size on larger screens */
+    margin: auto;
+    display: block;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .card{
+    color: #fff;
+    background-color: #17181C;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  @media (max-width: 991px) {
+    .hero-content h1 {
+      font-size: 2rem; /* Smaller font size for tablets */
+    }
+  
+    .hero-content p {
+      font-size: 1rem; /* Smaller font size for paragraph on tablets */
+    }
+  
+    .btn-custom {
+      font-size: 0.9rem; /* Smaller font size for the button */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .hero-content {
+      text-align: center; /* Centers text on smaller screens */
+    }
+  
+    .hero-content h1 {
+      font-size: 1.5rem; /* Smaller font size for mobile devices */
+    }
+  
+    .hero-content p {
+      font-size: 0.875rem; /* Smaller font size for paragraph on mobile devices */
+    }
+  
+    .btn-custom {
+      font-size: 0.8rem; /* Smaller font size for the button on mobile devices */
+    }
+  
+    .row {
+      flex-direction: column; /* Stacks columns on smaller screens */
+    }
+  
+    .col-md-6 {
+      padding: 0; /* Removes padding for a tighter fit */
+    }
+  }
+
+  
+  /* Features Section */
+  .features {
+    padding: 60px 0;
+    background-color: #0E0F23;
+  }
+  .features .card {
+    background-color: #16172F;
+    border: none;
+    transition: transform 0.3s;
+  }
+  .features .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Footer Section */
+  .footer {
+    padding: 20px 0;
+  }
+  

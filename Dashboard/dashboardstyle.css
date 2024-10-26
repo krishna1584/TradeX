@@ -277,88 +277,190 @@
       box-shadow: 0 1rem 2rem var(--color-primary-light);
   }
   
-  /* <!-- section middle --> */
-  main section.middle .header{
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-  }
-  main section.middle .header input[type="date"]{
-      padding: 0.5rem 2rem;
-      border-radius: var(--border-radius-2);
-      border: none;
-      background: var(--color-white);
-      color: var(--color-gray-dark);
-  }
-  main section.middle .cards{
-      margin-top: 1rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-  }
-  main section.middle .cards .card{
-      background: linear-gradient(#ff796f, #bd261b);
-      padding: var(--card-padding);
-      border-radius: var(--card-border-radius);
-      color: white;
-      height: 16rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 2rem 3rem var(--color-danger-light);
-      min-width: 22rem;
-      transition: all 0.3s ease;
-  }
-  main section.middle .cards .card:nth-child(2){
-      background: linear-gradient(#7f8191, #27282f);
-      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
-  }
-  main section.middle .cards .card:nth-child(3){
-      background: linear-gradient(#5d70ff, #5719c2);
-      box-shadow: 0 2rem 3rem var(--color-primary-light)
-  }
-  main section.middle .cards .card:hover{
-      box-shadow: none;
-  }
-  main section.middle .cards .card .top{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-  main section.middle .cards .card .top .left{
-      display: flex;
-      gap: 0.5rem;
-  }
-  main section.middle .cards .card .top .left h2{
-      font-weight: 200;
-      font-size: 1.4rem;
-  }
-  main section.middle .cards .card .top .left img{
-      width: 2.3rem;
-      height: 2.3rem;
-      border: 1px solid white;
-      border-radius: var(--border-radius-2);
-      padding: 0.4rem;
-  }
-  main section.middle .cards .card .top img.right{
-      width: 3.5rem;
-  }
-  main section.middle .cards .card .middle{
-      display: flex;
-      justify-content: space-between;
-  }
-  main section.middle .cards .card .middle .chip{
-      width: 3.5rem;
-  }
-  main section.middle .cards .card .bottom{
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-  }
-  main section.middle .cards .card .bottom .right{
-      display: flex;
-      gap: 2rem;
-  }
+/* <!-- section middle --> */
+main section.middle .header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+main section.middle .header input[type="date"]{
+    padding: 0.5rem 2rem;
+    border-radius: var(--border-radius-2);
+    border: none;
+    background: var(--color-white);
+    color: var(--color-gray-dark);
+}
+main section.middle .cards{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+main section.middle .cards .card{
+    background: linear-gradient(#ff796f, #bd261b);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    color: white;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2rem 3rem var(--color-danger-light);
+    min-width: 22rem;
+    transition: all 0.3s ease;
+}
+main section.middle .cards .card:nth-child(2){
+    background: linear-gradient(#7f8191, #27282f);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+}
+main section.middle .cards .card:nth-child(3){
+    background: linear-gradient(#5d70ff, #5719c2);
+    box-shadow: 0 2rem 3rem var(--color-primary-light)
+}
+main section.middle .cards .card:hover{
+    box-shadow: none;
+}
+main section.middle .cards .card .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main section.middle .cards .card .top .left{
+    display: flex;
+    gap: 0.5rem;
+}
+main section.middle .cards .card .top .left h2{
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+main section.middle .cards .card .top .left img{
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 1px solid white;
+    border-radius: var(--border-radius-2);
+    padding: 0.4rem;
+}
+main section.middle .cards .card .top img.right{
+    width: 3.5rem;
+}
+main section.middle .cards .card .middle{
+    display: flex;
+    justify-content: space-between;
+}
+main section.middle .cards .card .middle .chip{
+    width: 3.5rem;
+}
+main section.middle .cards .card .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+main section.middle .cards .card .bottom .right{
+    display: flex;
+    gap: 2rem;
+}
+
+
+/* <!-- monthly report --> */
+main .monthly-report{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+main .monthly-report h1{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+main .monthly-report .report div{
+    cursor: pointer;
+}
+
+
+/* <!-- fast payment --> */
+main .fast-payment{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+main .fast-payment .badges{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+main .fast-payment .badges .badge span{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+main .fast-payment .badges .badge{
+    padding: 0.6rem var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease
+}
+main .fast-payment .badges .badge:hover{
+    box-shadow: 0 0 1.5rem var(--color-primary-light);
+    cursor: pointer;
+}
+main .fast-payment .badges .badge:first-child span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+main .fast-payment .badges .badge div{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+  /* <!-- investments --> */
+  
+  main section.right .investments{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    margin-right: 1rem;
+}
+main section.right .investments img{
+    width: 2.4rem;
+}
+main section.right .investments .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--card-padding);
+    padding-bottom: 0;
+}
+main section.right .investments .header a{
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+}
+main section.right .investments .investment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-light);
+    transition: all 0.3s ease;
+}
+main section.right .investments .investment:last-child{
+    border-bottom: none;
+}
+main section.right .investments .investment:hover{
+    background: var(--color-light);
+    cursor: pointer;
+}
 
   /* responsive for table */
   @media screen and (max-width: 1024px){

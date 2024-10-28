@@ -424,6 +424,15 @@ main .fast-payment .badges .badge div{
     align-items: center;
 }
 
+  /* <!-- canvas --> */
+  canvas#chart{
+      background: var(--color-white);
+      min-width: 100%;
+      margin-top: 2rem;
+      border-radius: var(--card-border-radius);
+      padding: var(--card-padding);
+}
+  
   /* <!-- investments --> */
   
   main section.right .investments{
@@ -462,6 +471,60 @@ main section.right .investments .investment:hover{
     cursor: pointer;
 }
 
+/* <!-- recent transaction --> */
+  main .recent-transactions{
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+main .recent-transactions img{
+    width: 2.2rem;
+}
+main .recent-transactions .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+main .recent-transactions .header a{
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+
+}
+main .recent-transactions .transaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem var(--card-padding);
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+main .recent-transactions .transaction:hover{
+    background: var(--color-white);
+    cursor: pointer;
+}
+main .recent-transactions .transaction .service{
+    display: flex;
+    gap: 1rem;
+}
+main .recent-transactions .transaction .service .icon{
+    padding: var(--padding-2);
+    border-radius: var(--border-radius-1);
+    display: flex;
+    align-items: center;
+}
+main .recent-transactions .transaction .card-details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+main .recent-transactions .transaction .card-details .card{
+    display: flex;
+    width: 4.6rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius-2);
+}
   /* responsive for table */
   @media screen and (max-width: 1024px){
       nav .search-bar{

@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_KEY = '0da90f9ba1da45a2925b20377076ba52';
     const url = "https://newsapi.org/v2/everything?q=";
 
     // Load news specific to Indian stock market on page load

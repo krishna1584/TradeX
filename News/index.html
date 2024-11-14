@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News App</title>
-
+    <title>TradeX</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" href="internet.png" type="image/x-icon">
-    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <nav>
         <div class="main-nav container flex">
             <a href="" onclick="reload()" class="logo">
-                <a class="navbar-brand" href="/index.html"><i style="color: #3874FF;" class="fas fa-cubes-stacked"></i>Trade<i>X</i></a>
+                <img src="internett.png" alt="TradeX">
             </a>
             <div class="nav-links">
                 <ul class="flex">
-                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">International Market</li>
-                    <li class="hover-link nav-item" id="finance"  onclick="onNavItemClick('finance')">Indian Market</li>
-                    <li class="hover-link nav-item" id="politics"  onclick="onNavItemClick('politics')">Bombay Market</li>
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">Indian Stocks</li>
+                    <li class="hover-link nav-item" id="finance"  onclick="onNavItemClick('finance')">Internantional Market</li>
+                    <li class="hover-link nav-item" id="politics"  onclick="onNavItemClick('politics')">Today's Hot</li>
                 </ul>
             </div>
             <div class="search-bar flex">
@@ -34,6 +33,20 @@
         </div>
 
     </main>
+
+    <template id="template-news-card">
+
+        <div class="card"> 
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="News-Image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, reiciendis quis. Esse illo quae eaque nihil temporibus veritatis ea sunt.</p>
+            </div>
+        </div>
+    </template>
 
     <script src="script.js"></script>
 </body>
